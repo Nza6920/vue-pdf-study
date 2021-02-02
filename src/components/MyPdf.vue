@@ -74,7 +74,8 @@
                         .then((page) => {
                             // 获取canvasDOM对象
                             let canvas = _this.$refs.myCanvas
-                            let viewport = page.getViewport(_this.scale)
+                            console.log(page)
+                            let viewport = page.getViewport({scale: _this.scale})
                             canvas.height = viewport.height
                             canvas.width = viewport.width
 
@@ -84,7 +85,7 @@
                                 viewport: viewport
                             }
                             // 显示pdf
-                            page.render(renderContext).then(() => {
+                            page.render(renderContext).promise.then(() => {
                                 _this.$emit('loadFinished')
                                 _this.loadFinished = true
                             })
