@@ -1,24 +1,11 @@
 # vue-pdf-study
+vue 封装 [pdf.js](https://github.com/mozilla/pdf.js) 组件实现 预览、 上一页、 下一页功能
 
-## Project setup
+## Setup
 ```
 npm install
 ```
-
-### Compiles and hot-reloads for development
+## Run
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
